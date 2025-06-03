@@ -244,6 +244,56 @@
             margin-top: 60px;
         }
 
+        .faq-section {
+            margin: 80px 0;
+            padding: 60px 40px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 30px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+        }
+
+        .faq-grid {
+            display: grid;
+            gap: 25px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        .faq-item h3 {
+            color: #FFD700;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .faq-item h3::before {
+            content: "🎱";
+            font-size: 1.2rem;
+        }
+
+        .faq-item p {
+            line-height: 1.6;
+            font-size: 1rem;
+            opacity: 0.95;
+        }
+
         @media (max-width: 768px) {
             .main-content {
                 grid-template-columns: 1fr;
@@ -261,6 +311,11 @@
             
             .jackpot-timer {
                 font-size: 2rem;
+            }
+            
+            .faq-section {
+                padding: 40px 20px;
+                margin: 60px 0;
             }
         }
     </style>
@@ -294,11 +349,11 @@
                 <h2>💰 Tokenomics Breakdown</h2>
                 <div class="fee-breakdown">
                     <div class="fee-item">
-                        <span class="fee-label">Transfer Fee</span>
+                        <span class="fee-label">🎱 Magic Transfer Fee</span>
                         <span class="fee-value">8%</span>
                     </div>
                     <div style="font-size: 0.9rem; color: #ccc; text-align: center; margin: 10px 0;">
-                        Applied to every transaction
+                        The Magic Number! Applied to every transaction
                     </div>
                     
                     <div class="fee-item">
@@ -350,6 +405,77 @@
             <p style="margin-top: 20px; font-size: 1.1rem;">
                 🎱 Shake the Magic 8 Ball every 15 minutes - 10 winners guaranteed!
             </p>
+        </div>
+
+        <div class="faq-section">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 40px; color: #FFD700;">
+                🎱 Frequently Asked Questions
+            </h2>
+            <p style="text-align: center; margin-bottom: 40px; font-size: 1.2rem; opacity: 0.9;">
+                Find answers to common questions about Magic 8 Sol lottery
+            </p>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>What is Magic 8 Sol?</h3>
+                    <p>Magic 8 Sol is a revolutionary lottery token built on the Solana blockchain with draws every 15 minutes. Players automatically participate by holding tokens, and 10 winners are randomly selected each round using verifiable random functions (VRF).</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How often are draws held?</h3>
+                    <p>Draws are held every 15 minutes, 24/7. This means there are 96 opportunities to win every single day! The exact draw times are determined by the blockchain and VRF system.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How much does it cost to play?</h3>
+                    <p>Simply buy and hold Magic 8 Sol tokens! Every transaction has an 8% transfer fee that funds the prize pool. You only need to pay standard Solana transaction fees when buying tokens (usually less than $0.01).</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How are winners selected?</h3>
+                    <p>Winners are selected using Solana's verifiable random functions (VRF) which ensures complete fairness and transparency. All eligible Magic 8 Sol token holders are automatically entered into each 15-minute draw.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What wallet do I need?</h3>
+                    <p>You can use any Solana-compatible wallet such as Phantom, Solflare, Backpack, or any other wallet that supports SPL tokens. Make sure your wallet is properly set up and you have SOL for transaction fees.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How do I verify the game is fair?</h3>
+                    <p>All draws use verifiable random functions (VRF) which can be verified on the Solana blockchain. Every draw and payout is recorded on-chain and can be independently verified. You can check all transactions on Solana Explorer.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How much can I win?</h3>
+                    <p>Prize amounts vary based on trading volume and the 8% transfer fee collected. 76% of all fees go directly to the 10 winners each round, automatically distributed after each draw.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How and when do I receive my winnings?</h3>
+                    <p>Winnings are automatically sent to your wallet immediately after each 15-minute draw! There's no need to claim prizes or contact anyone. If you win, the prize will appear in your wallet within minutes.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I win multiple times?</h3>
+                    <p>Absolutely! There's no limit to how many times you can win. Each draw is independent, so previous wins don't affect your chances in future draws. As long as you hold Magic 8 Sol tokens, you're automatically entered.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Is Magic 8 Sol safe?</h3>
+                    <p>Yes! The entire system runs on smart contracts on the Solana blockchain, making it transparent and secure. All code is auditable, and the random number generation uses VRF for fairness. However, only invest what you can afford to lose.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do I need to do anything after buying tokens?</h3>
+                    <p>No! Once you hold Magic 8 Sol tokens in your wallet, you are automatically eligible for all future 15-minute draws. There's no need to register or sign up anywhere - just hold the tokens and you're in!</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What is the 8% transfer fee?</h3>
+                    <p>The Magic 8 transfer fee is applied to every transaction. 76% goes directly to lottery winners, 20% supports development, and 4% covers operations. This fee structure ensures continuous prize pools and sustainable development.</p>
+                </div>
+            </div>
         </div>
 
         <footer class="footer">
